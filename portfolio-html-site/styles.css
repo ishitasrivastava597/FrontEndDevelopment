@@ -1,0 +1,152 @@
+/* Masterstyle*/
+body{
+  
+    font-family: "Parisienne" , cursive;
+    margin: 0px;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/*NavbarStyle*/
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+   
+    
+}
+
+.leftside{
+    display: flex;
+    
+    
+}
+
+.nav-link-wrapper{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    height:22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a{
+      
+    color: #8a8a8a;
+    transition :color 0.5s;
+    text-decoration: none;
+
+}
+
+.nav-link-wrapper:hover{
+
+    border-bottom: 1px solid black;
+
+}
+
+.nav-link-wrapper a:hover{
+    color : black;
+    font-weight: 800;
+    
+}
+.active-nav-link{
+
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+
+    color: black !important;
+}
+
+
+/*Portfolio*/
+.portfolio-items-wrapper{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+
+}
+.portfolio-singleitem-wrapper{
+
+    position: relative;
+}
+.portfolio-image-background{
+    height:300px;
+    width:100%;
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+  }
+.img-text-wrapper{
+     position:absolute;
+     top: 0px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height:100%;
+     text-align: center;
+     padding-left: 100px;
+     padding-right:100px;
+}
+.logo-wrapper img{
+    
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.subtitles{
+    color: aliceblue;
+}
+.img-text-wrapper .subtitles{
+
+    transition: 1s;
+    font-weight: 800;
+  /*hides the subtitle in the begining of animation*/  
+    color:transparent;
+}
+
+
+ /*Needs to be more specific with selector*/
+.img-text-wrapper:hover .subtitles{
+
+    font-weight: 800;
+    color:white;
+    
+}
+.img-darken{
+
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/*About page */
+.two-column-wrapper{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.profile-image-wrapper img{
+
+    width: 100%;
+}
+.profile-content-wrapper{
+
+    padding: 30px;
+
+}
+.profile-content-wrapper h1{
+       
+    color: orange;
+}
+
+
+
+
+
+
